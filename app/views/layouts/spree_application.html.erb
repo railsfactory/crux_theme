@@ -14,7 +14,14 @@ end
 end
 %>
 <%color=find_theme%>
-<body class="<%= @body_class %>" id="<%= @body_id %>" style="background:url('/images/<%=color%>-bg.png') repeat-x scroll center 0 !important">
+<%if color=="red"%>
+<%bg="background: url('/images/bg-red_02.png') repeat-y scroll center 0 #FFDED6 !important;"%>
+<%elsif color=="green"%>
+<%bg="background: url('/images/bg-green.png') repeat-y scroll center 0 #E2FFD7 !important;"%>
+<%else %>
+<%bg="background: url('/images/bg_02.png') repeat-y scroll center 0 #D6F7FF !important"%>
+<%end%>
+<body class="<%= @body_class %>" id="<%= @body_id %>" style="<%=bg%> ">
 <div id="header" class="container_bg main-header" style="float:none;">
 <div class="container">
 <div id="login-bar">
