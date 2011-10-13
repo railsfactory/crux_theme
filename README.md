@@ -1,7 +1,7 @@
 ﻿CruxTheme
 =========
 
-CruxTheme is an extension for Spree Commerce. It is mandatory that Spree has to be installed in the system
+CruxTheme is an extension for Spree Commerce. It is mandatory that Spree and Crux has to be installed in the system
 to add this extension. CruxTheme allows users to select individual themes and customise design elements for their store.
 
 Installation
